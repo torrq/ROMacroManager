@@ -34,16 +34,16 @@ namespace ROMacroManager
                 // Key label (Alt + number)
                 var lblKey = new System.Windows.Forms.Label();
                 lblKey.Text = $"Alt + {(i + 1) % 10}";
-                lblKey.Location = new Point(12, 80 + (i * 25));
-                lblKey.Size = new Size(60, 20);
+                lblKey.Location = new Point(20, 64 + (i * 25));
+                lblKey.Size = new Size(50, 20);
                 lblKey.TextAlign = ContentAlignment.MiddleLeft;
                 this.Controls.Add(lblKey);
 
                 // Command textbox
                 var txtCommand = new TextBox();
                 txtCommand.Name = $"txtShortcut{i}";
-                txtCommand.Location = new Point(78, 78 + (i * 25));
-                txtCommand.Size = new Size(380, 20);
+                txtCommand.Location = new Point(75, 63 + (i * 25));
+                txtCommand.Size = new Size(370, 20);
                 txtCommand.TextChanged += TxtCommand_TextChanged;
                 shortcutTextBoxes[i] = txtCommand;
                 this.Controls.Add(txtCommand);
